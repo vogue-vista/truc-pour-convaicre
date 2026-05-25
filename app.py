@@ -148,7 +148,7 @@ else:
                         temperature=0.7
                     )
                     
-                    strategie_generee = reponse.choices.message.content
+                  calendrier_genere = reponse.choices[0].message.content  # Ligne corrigée  (Adapte le nom de la variable selon l'app)
                     st.success("✨ Votre stratégie pour exploser le panier moyen est prête !")
                     st.markdown(strategie_generee)
                     st.text_area("Copier la stratégie brute :", value=strategie_generee, height=300)
